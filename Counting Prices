@@ -1,0 +1,17 @@
+sum = 0
+count = 0
+#Set variables
+name = input("What is your name: ")
+min = float(input("What is the minimum price: "))
+#Takes the inputs for name and price.
+price_list=[69.0, 71.0, 84.5, 91.0, 67.4, 81.2, 84.6, 58.8, 79.3, 101.]
+#list of prices
+for price in price_list:
+    sum = sum + price
+    if price> min:
+        count = count+1
+#Counts the number of prices that greater then the prices in list.       
+print ("Hello ", name, "the minimum price is ", min)
+print ("There are ", count, "prices greater than the minimum price")
+print ("The total price is ", sum)
+#Printed outputs with variables.
